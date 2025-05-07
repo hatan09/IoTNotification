@@ -14,8 +14,8 @@ public class SignalRClientSettings
     #endregion
 
     #region [ Properties ]  
-    public string HubUrl { get; internal set; }
+    public string HubUrl { get; set; }
 
-    public string HubName { get; internal set; }
+    public string HubName { get; set; }
     #endregion
 }

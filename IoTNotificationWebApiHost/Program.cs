@@ -39,7 +39,12 @@ builder.Services.AddEndpointsApiExplorer();
 // Swagger
 builder.Services.AddSwaggerDefaults("Notification Api", 1);
 
+// Run
 var app = builder.Build();
+
+app.MapControllers();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.MapHealthChecks("/healthz");
 

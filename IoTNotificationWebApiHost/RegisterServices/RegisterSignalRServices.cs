@@ -28,7 +28,8 @@ internal static class RegisterSignalRServices
     private static void EnsureSettings(this IServiceCollection services, IConfiguration configuration) {
         var settings = new SignalRClientSettings();
 
-        configuration.GetSection("SignalRClient").Bind(settings);
+        var test = configuration.GetSection("SignalRClient:Settings");
+        configuration.GetSection("SignalRClient:Settings").Bind(settings);
 
         if (string.IsNullOrEmpty(settings.HubUrl)) {
             throw new ArgumentException("SignalRClient: required field HubUrl is not set in the configuration.");

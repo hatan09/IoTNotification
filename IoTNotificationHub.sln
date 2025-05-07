@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{01B044CC-F864-4A2C-A0E4-925D3136E4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTNotification.Core", "IoTNotification.Core\IoTNotification.Core.csproj", "{AFBB8788-F20F-406F-829C-E1A658041436}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{C3A5CF80-37E9-42E1-B7EA-D522C6EA64B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTNotificationHub", "IoTNotificationHub\IoTNotificationHub.csproj", "{83C9D78E-5E62-4830-806B-D460670B9840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Features", "Features", "{42386F33-E5C6-4996-AF63-08D1425A3912}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{AB70D661-6D6B-44FC-BFB5-EF4B98E61078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTNotificationWebApiHost", "IoTNotificationWebApiHost\IoTNotificationWebApiHost.csproj", "{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRServices", "SignalRServices\SignalRServices.csproj", "{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFBB8788-F20F-406F-829C-E1A658041436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBB8788-F20F-406F-829C-E1A658041436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBB8788-F20F-406F-829C-E1A658041436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBB8788-F20F-406F-829C-E1A658041436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C9D78E-5E62-4830-806B-D460670B9840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C9D78E-5E62-4830-806B-D460670B9840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C9D78E-5E62-4830-806B-D460670B9840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C9D78E-5E62-4830-806B-D460670B9840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFBB8788-F20F-406F-829C-E1A658041436} = {01B044CC-F864-4A2C-A0E4-925D3136E4A4}
+		{83C9D78E-5E62-4830-806B-D460670B9840} = {C3A5CF80-37E9-42E1-B7EA-D522C6EA64B4}
+		{AB70D661-6D6B-44FC-BFB5-EF4B98E61078} = {42386F33-E5C6-4996-AF63-08D1425A3912}
+		{834D5EE3-A25A-4EC9-AC9A-0DE1B3D967CC} = {C3A5CF80-37E9-42E1-B7EA-D522C6EA64B4}
+		{AFEC9CF7-681A-4D1F-9E72-5B1AD5140656} = {AB70D661-6D6B-44FC-BFB5-EF4B98E61078}
+	EndGlobalSection
+EndGlobal

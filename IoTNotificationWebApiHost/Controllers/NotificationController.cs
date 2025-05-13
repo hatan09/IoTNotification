@@ -18,8 +18,19 @@ public class NotificationController(SignalRClientService signalRService) : Contr
     [HttpPost]
     public async Task<IActionResult> SendMessage([FromBody] string message) {
         try {
-            await _signalRService.SendMessageAsync(message);
+            //await _signalRService.SendMessageAsync(message);
             return Ok(new { Status = "Message sent", message });
+        }
+        catch (Exception ex) {
+            return StatusCode(500, new { error = ex.Message });
+        }
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> GetMessage() {
+        try {
+            //await _signalRService.SendMessageAsync(message);
+            return Ok(new { Status = "Message sent" });
         }
         catch (Exception ex) {
             return StatusCode(500, new { error = ex.Message });
